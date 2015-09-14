@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		898220A81BA727F1001FF981 /* DemoViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 898220A71BA727F1001FF981 /* DemoViewController2.m */; };
+		898220AB1BA7345D001FF981 /* DemoViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 898220AA1BA7345D001FF981 /* DemoViewController3.m */; };
 		BDC81E401BA6DBCD0031D6EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC81E3F1BA6DBCD0031D6EE /* main.m */; };
 		BDC81E431BA6DBCE0031D6EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC81E421BA6DBCE0031D6EE /* AppDelegate.m */; };
 		BDC81E461BA6DBCE0031D6EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC81E451BA6DBCE0031D6EE /* ViewController.m */; };
@@ -18,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		898220A61BA727F1001FF981 /* DemoViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController2.h; sourceTree = "<group>"; };
+		898220A71BA727F1001FF981 /* DemoViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController2.m; sourceTree = "<group>"; };
+		898220A91BA7345D001FF981 /* DemoViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController3.h; sourceTree = "<group>"; };
+		898220AA1BA7345D001FF981 /* DemoViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController3.m; sourceTree = "<group>"; };
 		BDC81E3B1BA6DBCD0031D6EE /* LLDB_DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLDB_DEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDC81E3F1BA6DBCD0031D6EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BDC81E411BA6DBCE0031D6EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,9 +78,13 @@
 				BDC81E451BA6DBCE0031D6EE /* ViewController.m */,
 				BDFFDDE81BA6FB92004234AF /* DemoViewController1.h */,
 				BDFFDDE91BA6FB92004234AF /* DemoViewController1.m */,
+				898220A61BA727F1001FF981 /* DemoViewController2.h */,
+				898220A71BA727F1001FF981 /* DemoViewController2.m */,
+				898220A91BA7345D001FF981 /* DemoViewController3.h */,
+				898220AA1BA7345D001FF981 /* DemoViewController3.m */,
 				BDC81E471BA6DBCE0031D6EE /* Main.storyboard */,
-				BDC81E4A1BA6DBCE0031D6EE /* Assets.xcassets */,
 				BDC81E4C1BA6DBCE0031D6EE /* LaunchScreen.storyboard */,
+				BDC81E4A1BA6DBCE0031D6EE /* Assets.xcassets */,
 				BDC81E4F1BA6DBCE0031D6EE /* Info.plist */,
 				BDC81E3E1BA6DBCD0031D6EE /* Supporting Files */,
 			);
@@ -120,6 +130,7 @@
 				TargetAttributes = {
 					BDC81E3A1BA6DBCD0031D6EE = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 6RUU9PN7NF;
 					};
 				};
 			};
@@ -160,9 +171,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDFFDDE71BA6F315004234AF /* UIColor+FlatColor.m in Sources */,
+				898220AB1BA7345D001FF981 /* DemoViewController3.m in Sources */,
 				BDC81E461BA6DBCE0031D6EE /* ViewController.m in Sources */,
 				BDC81E431BA6DBCE0031D6EE /* AppDelegate.m in Sources */,
 				BDC81E401BA6DBCD0031D6EE /* main.m in Sources */,
+				898220A81BA727F1001FF981 /* DemoViewController2.m in Sources */,
 				BDFFDDEA1BA6FB92004234AF /* DemoViewController1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,11 +289,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LLDB_DEMO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.didapinche.LLDB-DEMO";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -289,11 +305,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LLDB_DEMO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.didapinche.LLDB-DEMO";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

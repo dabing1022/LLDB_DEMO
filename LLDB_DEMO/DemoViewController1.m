@@ -16,22 +16,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    int m = [self method1];
+    int n = m * 3;
+    
+    int a = [self method2:100];
+    
+    
+    
+    int sum = 0;
+    for (int i = 0; i < 100; ++i) {
+        sum += i;
+    }
+    NSLog(@"sum is %d", sum);
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (int)method1 {
+    return 100;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (int)method2:(int)param1 {
+    return param1 * 2;
 }
-*/
+
 
 @end

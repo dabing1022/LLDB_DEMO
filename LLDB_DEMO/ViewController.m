@@ -18,12 +18,12 @@ static NSString *DemoCellReuseId = @"demo_cell";
     self.mainView.layer.cornerRadius = 8;
     self.mainView.layer.masksToBounds = YES;
     self.selectionStyle = UITableViewCellSelectionStyleNone;
-    self.mainView.backgroundColor = [UIColor randomColor];
 }
 
 - (void)configWithIndex:(NSInteger)index content:(NSString *)content {
     self.titleIndexLabel.text = [NSString stringWithFormat:@"%@", @(index)];
     self.contentLabel.text = content;
+    self.mainView.backgroundColor = [UIColor randomColor];
 }
 
 @end
@@ -39,9 +39,15 @@ static NSString *DemoCellReuseId = @"demo_cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _demos = @[@"Basic",
-               @"Basic100",
-               @"Basic2"];
+    _demos = @[@"LLDB Basic",
+               @"LLDB UI",
+               @"LLDB Breakpoints"];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self.tableView reloadData];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -65,6 +71,8 @@ static NSString *DemoCellReuseId = @"demo_cell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *className = [NSString stringWithFormat:@"DemoViewController%@", @(indexPath.row + 1)];
     UIViewController *vc = [[NSClassFromString(className) alloc] init];
+    vc.view.backgroundColor = [UIColor whiteColor];
+    vc.title = _demos[indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end

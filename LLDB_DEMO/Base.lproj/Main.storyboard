@@ -8,7 +8,7 @@
         <!--LLDB-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="LLDB" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -93,7 +93,7 @@
                             <constraint firstItem="kTO-Tf-r6h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="o8s-DF-SkW"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="H9s-Ve-rko"/>
+                    <navigationItem key="navigationItem" title="LLDB" id="H9s-Ve-rko"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="tableView" destination="kTO-Tf-r6h" id="kaR-bL-z9z"/>
