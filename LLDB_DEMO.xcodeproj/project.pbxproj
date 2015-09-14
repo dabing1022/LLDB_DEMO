@@ -13,6 +13,8 @@
 		BDC81E491BA6DBCE0031D6EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDC81E471BA6DBCE0031D6EE /* Main.storyboard */; };
 		BDC81E4B1BA6DBCE0031D6EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDC81E4A1BA6DBCE0031D6EE /* Assets.xcassets */; };
 		BDC81E4E1BA6DBCE0031D6EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDC81E4C1BA6DBCE0031D6EE /* LaunchScreen.storyboard */; };
+		BDFFDDE71BA6F315004234AF /* UIColor+FlatColor.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFFDDE61BA6F315004234AF /* UIColor+FlatColor.m */; };
+		BDFFDDEA1BA6FB92004234AF /* DemoViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFFDDE91BA6FB92004234AF /* DemoViewController1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		BDC81E4A1BA6DBCE0031D6EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDC81E4D1BA6DBCE0031D6EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDC81E4F1BA6DBCE0031D6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDFFDDE51BA6F315004234AF /* UIColor+FlatColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatColor.h"; sourceTree = "<group>"; };
+		BDFFDDE61BA6F315004234AF /* UIColor+FlatColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatColor.m"; sourceTree = "<group>"; };
+		BDFFDDE81BA6FB92004234AF /* DemoViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController1.h; sourceTree = "<group>"; };
+		BDFFDDE91BA6FB92004234AF /* DemoViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +66,12 @@
 			children = (
 				BDC81E411BA6DBCE0031D6EE /* AppDelegate.h */,
 				BDC81E421BA6DBCE0031D6EE /* AppDelegate.m */,
+				BDFFDDE51BA6F315004234AF /* UIColor+FlatColor.h */,
+				BDFFDDE61BA6F315004234AF /* UIColor+FlatColor.m */,
 				BDC81E441BA6DBCE0031D6EE /* ViewController.h */,
 				BDC81E451BA6DBCE0031D6EE /* ViewController.m */,
+				BDFFDDE81BA6FB92004234AF /* DemoViewController1.h */,
+				BDFFDDE91BA6FB92004234AF /* DemoViewController1.m */,
 				BDC81E471BA6DBCE0031D6EE /* Main.storyboard */,
 				BDC81E4A1BA6DBCE0031D6EE /* Assets.xcassets */,
 				BDC81E4C1BA6DBCE0031D6EE /* LaunchScreen.storyboard */,
@@ -106,7 +116,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0710;
-				ORGANIZATIONNAME = ChildhoodAndy;
+				ORGANIZATIONNAME = "🚖didapinche.com";
 				TargetAttributes = {
 					BDC81E3A1BA6DBCD0031D6EE = {
 						CreatedOnToolsVersion = 7.1;
@@ -149,9 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDFFDDE71BA6F315004234AF /* UIColor+FlatColor.m in Sources */,
 				BDC81E461BA6DBCE0031D6EE /* ViewController.m in Sources */,
 				BDC81E431BA6DBCE0031D6EE /* AppDelegate.m in Sources */,
 				BDC81E401BA6DBCD0031D6EE /* main.m in Sources */,
+				BDFFDDEA1BA6FB92004234AF /* DemoViewController1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +275,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				INFOPLIST_FILE = LLDB_DEMO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.didapinche.LLDB-DEMO";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,7 +288,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				INFOPLIST_FILE = LLDB_DEMO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.didapinche.LLDB-DEMO";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +316,7 @@
 				BDC81E541BA6DBCE0031D6EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
