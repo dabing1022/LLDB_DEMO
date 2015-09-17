@@ -31,7 +31,7 @@
     for (int i = 0; i < 10; ++i) {
         [arr addObject:@(i)];
     }
-//    NSLog(@"arr index 10 %@", arr[10]);
+    NSLog(@"arr index 10 %@", arr[10]);
 }
 
 @end
