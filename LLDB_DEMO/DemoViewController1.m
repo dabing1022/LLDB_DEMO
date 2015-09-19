@@ -22,7 +22,8 @@
     
     int a = [self method2:100];
     
-    
+    UIView *testview  = [UIView new];
+    [self.view addSubview:testview];
     
     int sum = 0;
     for (int i = 0; i < 100; ++i) {

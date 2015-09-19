@@ -42,12 +42,18 @@ static NSString *DemoCellReuseId = @"demo_cell";
     _demos = @[@"LLDB Basic",
                @"LLDB UI",
                @"LLDB Breakpoints"];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(justTestNofifyHandler:) name:@"JustTestNotify" object:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
     [self.tableView reloadData];
+}
+
+- (void)justTestNofifyHandler:(NSNotification *)notify {
+    NSLog(@"%s, %d", __FILE__, __LINE__);
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

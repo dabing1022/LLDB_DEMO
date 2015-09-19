@@ -16,6 +16,8 @@
 
 @end
 
+
+// view debug
 @implementation DemoViewController2
 
 - (void)viewDidLoad {
@@ -24,6 +26,7 @@
     _greenView = [[UIView alloc] initWithFrame:CGRectMake(20, 120, 100, 30)];
     _greenView.backgroundColor = [UIColor greenColor];
     [self.view addSubview:_greenView];
+    _greenView.alpha = 1.0;
     
     _labelInGreenView = [[UILabel alloc] initWithFrame:_greenView.bounds];
     _labelInGreenView.textAlignment = NSTextAlignmentLeft;
@@ -37,7 +40,6 @@
     
     [self updateLabelInGreeenView:@"Hello, where are you?"];
     
-    
     UIButton *testBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     [testBtn setTitle:@"test" forState:UIControlStateNormal];
     [self.view addSubview:testBtn];
@@ -46,15 +48,16 @@
 }
 
 // frame?
-// hidden?
+// hidden?justTestNofifyHandler
 // alpha?
+// superview frame/hidden/alpha/hierarchy
 
 - (void)updateLabelInGreeenView:(NSString *)content {
     _labelInGreenView.text = content;
 }
 
 - (void)testHandler:(UIButton *)button {
-    NSLog(@"Nothing do :) ");
+    NSLog(@"I am sorry, nothing to do:) ");
 }
 
 @end

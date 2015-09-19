@@ -27,11 +27,21 @@
     label.textColor = [UIColor whiteColor];
     [view addSubview:label];
     
+    
+    // exp variable
+    // eidt breakpoint
+    // exception breakpoint
     NSMutableArray *arr = [NSMutableArray array];
     for (int i = 0; i < 10; ++i) {
         [arr addObject:@(i)];
     }
-    NSLog(@"arr index 10 %@", arr[10]);
+//    NSInteger outOfRangeIndexNum = arr[10];
+}
+
+// the power of debug command:expression(exp/expr)
+// @see DemoViewController2 breakpoint in -testHandler
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"JustTestNotify" object:nil];
 }
 
 @end
